@@ -1,0 +1,9 @@
+@charset "UTF-8";
+ #formcon caption{text-align:center}
+ #formcon span{color:red}
+ #formcon table{width:100%;border-top:2px solid #009999;
+ 				border-bottom:2px solid #009999;border-spacing:0;}
+ #formcon td{border-bottom:1px solid #333;padding:10px 0 10px 10px}
+ #formcon th{border-bottom:1px solid #333;padding:10px 0 10px 10px;
+ 			 background:#d7f0ef;text-align:left}
+ #formcon fieldset{width:40%}
