@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 폼</title>
+
+  <style type="text/css">
+ *{margin:0;padding:0}
+ ul,ol,li{list-style:none}
+ img{border:none}
+ a{color:#333;text-decoration:none}
+ a:hover{color:#f00;text-decoration:underline}
+ body{font-family:"돋움";color:#333}
+
+ #formcon {width:630px;margin:0 auto}
+ #formcon h3{padding:0 0 10px 0}
+ #formcon p{padding:5px 0 20px 0}
+ fieldset{border:1px solid gray; padding:10px; margin-top:10px}
+/*  legend,caption{width:0;height:0} */
+ #formcon caption{text-align:center}
+ #formcon span{color:red}
+ #formcon table{width:100%;border-top:2px solid #009999;
+ border-bottom:2px solid #009999;border-spacing:0;}
+ #formcon td{border-bottom:1px solid #333;padding:10px 0 10px 10px}
+ #formcon th{border-bottom:1px solid #333;padding:10px 0 10px 10px;background:#d7f0ef;text-align:left}
+
+ #formcon input{border:1px solid #a6d5dd;color:#0000ff;padding:1px}
+
+ #formcon .input_btn{text-align:center}
+ #formcon .input_btn input{border:0;vertical-align:middle;margin-top:5px}
+ #formcon img{vertical-align:middle;margin-top:-3px}
+  </style>
+
+</head>
+
+<body>
+
+<div id="formcon">
+<form name="form1" action="join_view.jsp" method="post">
+<fieldset>
+<legend>회원가입서</legend>
+	<table>
+	<caption>사용자 폼 입력</caption>
+		<tr>
+			<td colspan="2"><span>*</span>(별표)은 필수입력사항입니다.</td>
+		</tr>
+		<tr>
+			<th><span>*</span><label for="id1">이름</label></th>
+			<td><input type="text" name="id1" id="id1" autofocus required></td>
+		</tr>
+		<tr>
+			<th><span>*</span><label for="id2">아이디</label></th>
+			<td><strong>영문,숫자 4~10글자 내외 </strong><input type="text" name="id2" id="id2" required></td>
+		</tr>
+		<tr>
+			<th><span>*</span><label for="id3">비밀번호</label></th>
+			<td><strong>영문,숫자 4~10글자 내외 </strong><input type="password" name="id3" id="id3" required></td>
+		</tr>
+		<tr>
+			<th><span>*</span><label for="id4">비밀번호확인</label></th>
+			<td><input type="password" name="id4" id="id4" required></td>
+		</tr>
+		<tr>
+			<th><label for="id5">&nbsp;이메일</label></th>
+			<td><input type="email" name="id5" id="id5"></td>
+		</tr>
+		<tr>
+			<th><label for="id6">&nbsp;직업</label></th>
+			<td>
+			<select name="id6" id="id6">
+				<option title="직업선택">직업선택</option>
+				<option title="웹디자이너">웹디자이너</option>
+				<option title="서버관리자">서버관리자</option>
+				<option title="자동차정비원">자동차정비원</option>
+				<option title="빅데이터전문가">빅데이터전문가</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<th><label for="id7">&nbsp;직장(학교명)</label></th>
+			<td><input type="text" name="id7" id="id7"></td>
+		</tr>
+		<tr>
+			<th><label for="id8">&nbsp;직책</label></th>
+			<td><input type="text" name="id8" id="id8"></td>
+		</tr>
+		<tr>
+			<th><label for="id9">&nbsp;사무실TEL</label></th>
+			<td><strong>숫자만 기입 </strong><input type="tel" name="id9" id="id9"></td>
+		</tr>
+		<tr>
+			<th><label for="id10">&nbsp;핸드폰</label></th>
+			<td><strong>숫자만 기입 </strong><input type="tel" name="id10" id="id10"></td>
+		</tr>
+		<tr>
+			<th><label for="id11">&nbsp;하고 싶은 말</label></th>
+			<td>
+			<textarea name="id11" id="id11" rows="5" cols="40"></textarea>
+			</td>
+		</tr>
+	</table>
+<p>
+<input type="submit" value="등록">
+<input type="reset" value="취소">
+</p>
+</fieldset>
+</form>
+</div>
+
+
+</body>
+
+</html>
